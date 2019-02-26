@@ -1,0 +1,82 @@
+{
+  "name": "relay-rails-blog-tutorial",
+  "version": "1.1.0",
+  "description": "A graphql, relay and standard rails application powered demo weblog. We are using Graphql server and relay for our react component data needs.",
+  "engines": {
+    "node": "5.0.0",
+    "npm": "3.7.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gauravtiwari/relay-rails-blog.git"
+  },
+  "keywords": [
+    "react",
+    "tutorial",
+    "comment",
+    "example"
+  ],
+  "author": "None",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gauravtiwari/relay-rails-blog/issues"
+  },
+  "homepage": "https://relay-rails-blog.herokuapp.com/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:client": "NODE_ENV=production webpack --config webpack.client.config.js",
+    "build:server": "NODE_ENV=production webpack --config webpack.server.config.js",
+    "build:dev:client": "webpack -w --config webpack.client.config.js",
+    "build:dev:server": "webpack -w --config webpack.server.config.js",
+    "lint": "npm run eslint && npm run jscs",
+    "eslint": "eslint --ext .js,.jsx .",
+    "jscs": "jscs --verbose ."
+  },
+  "dependencies": {
+    "autoprefixer": "^6.3.2",
+    "axios": "^0.9.1",
+    "babel": "^6.5.2",
+    "babel-cli": "^6.5.1",
+    "babel-core": "^6.5.1",
+    "babel-loader": "^6.2.2",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-relay-plugin": "^0.10.0",
+    "babel-relay-plugin-loader": "gauravtiwari/babel-relay-plugin-loader",
+    "babel-runtime": "^6.6.1",
+    "chokidar": "^1.6.1",
+    "classnames": "^2.2.3",
+    "css-loader": "^0.23.1",
+    "es5-shim": "^4.5.2",
+    "expose-loader": "^0.7.1",
+    "imports-loader": "^0.6.5",
+    "jquery": "^3.1.1",
+    "jquery-ujs": "^1.2.2",
+    "loader-utils": "^0.2.12",
+    "moment": "^2.15.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-relay": "^0.10.0",
+    "react-relay-on-rails": "4.2.0",
+    "resolve-url-loader": "^1.4.3",
+    "showdown": "^1.5.2",
+    "turbolinks": "^5.0.0",
+    "webpack": "^1.14.0"
+  },
+  "metadata": {
+    "graphql": {
+      "schema": "../app/assets/javascripts/relay/schema.json"
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "babel-runtime": "^6.6.1",
+    "eslint": "^3.8.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1"
+  }
+}

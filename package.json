@@ -1,0 +1,32 @@
+{
+  "name": "graphql-relay-blog",
+  "version": "1.0.0",
+  "description": "A blog built on graphql and relay using react_on_rails gem",
+  "main": "server.js",
+  "engines": {
+    "node": "6.7.0",
+    "npm": "3.10.8"
+  },
+  "scripts": {
+    "postinstall": "cd client && npm install",
+    "test": "rspec && (cd client && npm run lint)",
+    "express-server": "echo 'visit http://localhost:4000' && cd client && npm start",
+    "rails-server": "echo 'visit http://localhost:3000/hello_world' && foreman start -f Procfile.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gauravtiwari/relay-rails-blog"
+  },
+  "keywords": [
+    "react",
+    "tutorial",
+    "comment",
+    "example"
+  ],
+  "author": "gauravtiwari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gauravtiwari/relay-rails-blog/issues"
+  },
+  "homepage": "https://github.com/gauravtiwari/relay-rails-blog"
+}
