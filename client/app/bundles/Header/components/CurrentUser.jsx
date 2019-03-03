@@ -13,7 +13,7 @@ const CurrentUser = function CurrentUser(props) {
   <nav className="navbar navbar-default navbar-custom">
     <div className="container-fluid">
       <div className="navbar-header page-scroll">
-        <a className="navbar-brand" href="/">Demo Blog</a>
+        <a className="navbar-brand" href="/">MailFold</a>
       </div>
       <div className="collapse navbar-collapse">
         {root.current_user !== null ?
@@ -32,7 +32,7 @@ const CurrentUser = function CurrentUser(props) {
           </li>
           <li>
             <a href="https://github.com/gauravtiwari/relay-rails-blog" target="_blank" data-turbolinks="false">
-              <span className="fa fa-github"></span> Code
+              <span className="fa fa-github"></span> GitHub
             </a>
           </li>
         </ul> :
